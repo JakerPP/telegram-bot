@@ -1,0 +1,11 @@
+# Secrets - never commit live credentials
+/opt/
+.hcp_token
+.telegram.env
+*.env
+.env
+
+# Logs and temp files
+*.log
+*.tmp
+.DS_Store
