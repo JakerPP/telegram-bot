@@ -1,0 +1,10 @@
+[Unit]
+Description=Run TRC Gate Watcher every 30 seconds
+
+[Timer]
+OnBootSec=40
+OnUnitActiveSec=30
+AccuracySec=5
+
+[Install]
+WantedBy=timers.target

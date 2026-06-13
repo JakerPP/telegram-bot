@@ -1,0 +1,12 @@
+[Unit]
+Description=TRC Gate Watcher Notifications
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+WorkingDirectory=/opt/trc-tuya
+ExecStart=/opt/trc-tuya/gate_watcher.py
+User=root
+StandardOutput=journal
+StandardError=journal

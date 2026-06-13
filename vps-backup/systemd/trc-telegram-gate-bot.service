@@ -1,0 +1,17 @@
+[Unit]
+Description=TRC Telegram Gate and Leaf Bot
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=/opt/trc-tuya
+ExecStart=/opt/trc-tuya/telegram_gate_bot.py
+Restart=always
+RestartSec=5
+User=root
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target

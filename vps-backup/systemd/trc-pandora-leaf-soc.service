@@ -1,0 +1,12 @@
+[Unit]
+Description=TRC Pandora Leaf SOC Reader
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+WorkingDirectory=/opt/trc-tuya
+ExecStart=/opt/trc-tuya/pandora_leaf_soc.py
+User=root
+StandardOutput=journal
+StandardError=journal

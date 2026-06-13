@@ -1,0 +1,18 @@
+{
+    "vps": "ONLINE",
+    "asterisk": "ONLINE",
+    "gate": "CLOSED",
+    "gate_motion": "CLOSED",
+    "gate_source": "tuya_shadow",
+    "gate_position": 5,
+    "gate_l_close": true,
+    "gate_l_open": false,
+    "gate_rssi": -62,
+    "gate_position_delta": 0,
+    "gate_infrared": false,
+    "gate_ground_sensor": false,
+    "gate_checked_at": 1781347192,
+    "gate_l_close_time": 1781346379247,
+    "gate_l_open_time": 1781346355194,
+    "gate_position_time": 1781346379247
+}

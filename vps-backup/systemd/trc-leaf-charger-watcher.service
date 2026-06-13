@@ -1,0 +1,12 @@
+[Unit]
+Description=TRC Leaf Charger Watcher
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+WorkingDirectory=/opt/trc-tuya
+ExecStart=/opt/trc-tuya/leaf_charger_watcher.py
+User=root
+StandardOutput=journal
+StandardError=journal

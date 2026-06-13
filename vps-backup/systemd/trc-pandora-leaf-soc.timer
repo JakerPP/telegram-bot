@@ -1,0 +1,10 @@
+[Unit]
+Description=Run TRC Pandora Leaf SOC Reader every 10 minutes
+
+[Timer]
+OnBootSec=45
+OnUnitActiveSec=10min
+AccuracySec=30
+
+[Install]
+WantedBy=timers.target
