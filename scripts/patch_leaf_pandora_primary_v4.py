@@ -12,7 +12,7 @@ ENV = BASE / "telegram_gate_bot.env"
 PYTHON = "/opt/trc-tuya/venv/bin/python3"
 
 def replace_one(text, pattern, replacement, label):
-    new_text, n = re.subn(pattern, replacement, text, count=1, flags=re.S | re.M)
+    new_text, n = re.subn(pattern, lambda _m: replacement, text, count=1, flags=re.S | re.M)
     if n != 1:
         raise RuntimeError(f"{label}: expected one replacement, got {n}")
     return new_text
